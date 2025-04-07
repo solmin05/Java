@@ -26,8 +26,7 @@
 
 import java.util.Scanner;   //Scanner불어옴
 
-public class Main
-{
+public class Main{
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);    //Scanner 여기서 쓸거임
 		
