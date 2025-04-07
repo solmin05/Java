@@ -47,5 +47,6 @@ public class Main
 		for(int k=0;k<a;k++) {
 			System.out.print (b[k] + c[a-k-1] + " " );
 		}
+		scanner.close();
 	}
 }
