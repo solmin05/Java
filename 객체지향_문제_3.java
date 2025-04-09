@@ -30,7 +30,7 @@ public class Main {
         int sum = 0;
 
         while (a > 0) {
-            sum += n % 10;   // 마지막 자리 숫자를 더함
+            sum += a % 10;   // 마지막 자리 숫자를 더함
             a /= 10;         // 마지막 자리 제거
         }
 
