@@ -15,8 +15,7 @@ bcd*a
 abcd*
 */
 import java.util.*;
-public class Java5
-{
+public class Main{
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 	    char arr[] = new char[5]; //배열 5개 선언 
