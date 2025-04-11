@@ -25,25 +25,18 @@
 -2
 */
 import java.util.*;
-public class Main
-{
+public class Main{
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int arr[] = new int[5];//배열 선언 
+	    Scanner sc = new Scanner(System.in);
+	    int[] num = new int[5];
+	    for(int i=0;i<5;i++){
+	        num[i] = sc.nextInt();
+	        }
+	        Arrays.sort(num);
+	        System.out.println(num[4]);
+	        System.out.println(num[3]);
+	        sc.close();
+	    }
 		
-		for(int i=0;i<5;i++){ //for문을 사용하여 5번 반복 
-		    arr[i] = scanner.nextInt(); // 배열에 입력한 값 저장 
-		}
-		
-		Arrays.sort(arr);
-		
-		int firstLar = arr[4];
-		int secondLar = arr[3];
-		
-		System.out.println(firstLar);
-		System.out.println(secondLar);
-		
-		scanner.close();
 	}
 
-}
