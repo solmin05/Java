@@ -7,8 +7,6 @@ import java.util.*;
 public class Main {
 
    public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
-      	// 10개의 난수를 저장 받을 변수를 생성
 		int[] arr = new int[10];
       
 		// 1 ~ 5 까지의 난수 10개를 0 부터 9 인덱스에 저장 받고
