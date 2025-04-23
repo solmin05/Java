@@ -41,14 +41,14 @@ e
 □d□_□_
 □d□_□_
 */
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // 정답 단어 입력 (3글자)
-        String answer = scanner.nextLine().toLowerCase();
+        String answer = sc.nextLine().toLowerCase();
 
         // 상태 저장용 배열
         char[] result = { '_', '_', '_' };
@@ -56,7 +56,7 @@ public class Main {
         int attempts = 0;
 
         while (attempts < 5) {
-            String inputLine = scanner.nextLine().toLowerCase();
+            String inputLine = sc.nextLine().toLowerCase();
             char inputChar = inputLine.charAt(0);
 
             // 정답 확인 및 상태 갱신
@@ -72,14 +72,11 @@ public class Main {
             }
             System.out.println();
 
-            // 정답 맞췄는지 체크
-            if (new String(result).equals(answer)) {
-                break;
-            }
 
             attempts++;
         }
 
-        scanner.close();
+        sc.close();
     }
 }
+
