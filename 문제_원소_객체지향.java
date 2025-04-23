@@ -17,14 +17,13 @@
 5
 */
 import java.util.*;
-public class Main
-{
+public class Main{
 	public static void main(String[] args) {
-	    Scanner scanner = new Scanner(System.in);
+	    Scanner sc = new Scanner(System.in);
 		int arr[] = new int[5];//배열 선언 
 		
 		for(int i = 0; i < 5; i++){
-		    arr[i] = scanner.nextInt(); // 배열에 입력한 값 저장 
+		    arr[i] = sc.nextInt(); // 배열에 입력한 값 저장 
 		}
 		
         for(int i = 0; i < arr.length-1; i++){
