@@ -17,12 +17,12 @@ abcd*
 import java.util.*;
 public class Main{
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 	    char arr[] = new char[5]; //배열 5개 선언 
-	    String s = scanner.next(); //문자열 받는거 
+	    String str = sc.next(); //문자열 받는거 
 	    
 	    for(int i=0;i<5;i++){
-	        arr[i] = s.charAt(i);
+	        arr[i] = str.charAt(i);
 	    }
         // 입력받은 문자열을 한 칸씩 오른쪽으로 shift하여 출력
         for (int i = 5; i > 0; i--) {
