@@ -21,10 +21,9 @@ THREE
 FIVE-
 */
 import java.util.*;
-public class Main
-{
+public class Main{
 	public static void main(String[] args) {
-	    Scanner scanner = new Scanner(System.in);
+	    Scanner sc = new Scanner(System.in);
 	    char[][]x = {        
             {'Z', 'E', 'R', 'O', '-'},
             {'O', 'N', 'E', '-', '-'},
@@ -35,9 +34,9 @@ public class Main
         };
 	    
 	    for(int i=0;i<3;i++){ //for문을 사용하여 3번 반복 
-	        int j = scanner.nextInt();
-	        for(int k =0; k <5;k++){
-	            System.out.print(x[j][k]);
+	        int a = sc.nextInt();
+	        for(int j=0;j<5;j++){
+	            System.out.print(x[a][j]);
 	        }
 	        System.out.println();
 		}
