@@ -13,17 +13,16 @@
 
 (위 예에서 대각선은 1, 5, 9 이고 그 합은 15 이다)
 */
-import java.util.Scanner;
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int[][] arr = new int[3][3];
         int sum = 0;
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                arr[i][j] = scanner.nextInt();
+                arr[i][j] = sc.nextInt();
             }
         }
 
@@ -34,6 +33,6 @@ public class Main {
         
         System.out.println(sum);
 
-        scanner.close();
+        sc.close();
     }
 }
