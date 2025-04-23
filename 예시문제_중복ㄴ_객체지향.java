@@ -3,7 +3,6 @@
 ex) [1,1,1,3,3,3,5,5,5,2,2,] 처럼 배열이 있다면 [1,3,5,2]로 만들어 보아라 0은 제외
 */
 import java.util.*;
-
 public class Main {
 
    public static void main(String[] args) {
