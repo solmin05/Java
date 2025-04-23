@@ -22,7 +22,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[][] scores = new int[3][2]; 
+        int[][] scores = new int[3][2];     // 3명의 2과목 점수를 저장할 배열
 
         for (int i = 0; i < 3; i++) {
             scores[i][0] = sc.nextInt(); 
@@ -30,7 +30,7 @@ public class Main {
         }
 
         for (int i = 0; i < 3; i++) {
-            int sum = scores[i][0] + scores[i][1];
+            int sum = scores[i][0] + scores[i][1];    // 두 과목 점수 합산
             System.out.println(sum);
         }
 
