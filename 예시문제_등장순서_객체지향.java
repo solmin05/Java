@@ -31,19 +31,31 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
+        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();        // 입력 순서를 유지하는 Map
 
         // 10개의 숫자 입력 받기
         for (int i = 0; i < 10; i++) {
             int num = sc.nextInt();
-            map.put(num, map.getOrDefault(num, 0) + 1);
+            map.put(num, map.getOrDefault(num, 0) + 1);        // 숫자 개수 세기
         }
 
         // 결과 출력 (입력된 순서대로)
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
+        /*
+            Map.Entry<Integer, Integer> entry
+        → 위의 (key, value) 쌍 하나를 꺼내서 담는 변수입니다.
 
+        entry.getKey()
+        → 현재 쌍의 key를 가져옵니다 (여기선 입력한 숫자).
+
+        entry.getValue()
+        → 현재 쌍의 value를 가져옵니다 (해당 숫자의 개수).
+
+        System.out.println(...)
+        → 숫자와 그 개수를 한 줄에 출력합니다.
+        */
         sc.close();
     }
 }
