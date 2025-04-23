@@ -24,7 +24,7 @@
 (도움말: 필요한 배열은 동적할당 받아 사용하여야 함)
 */
 
-import java.util.Scanner;   //Scanner불어옴
+import java.util.*;   //Scanner불어옴
 
 public class Main{
 	public static void main(String[] args) {
@@ -46,6 +46,6 @@ public class Main{
 		for(int k=0;k<a;k++) {
 			System.out.print (b[k] + c[a-k-1] + " " );
 		}
-		scanner.close();
+		sc.close();
 	}
 }
