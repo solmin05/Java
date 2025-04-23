@@ -24,9 +24,11 @@ import java.util.Scanner;
 	        for(int i=0;i<5;i++){
 	            nums[i] = sc.nextInt();
 	        }
+		// 버블 정렬 (오름차순 정렬)
 	        for(int i=0;i<4;i++){
 	            for(int j=0;j<4-i;j++){
 	                if(nums[j] > nums[j+1]){
+			// 인접한 두 수를 비교해서 큰 수를 뒤로 보냄 (swap)
 	                    int temp = nums[j];
 	                    nums[j] = nums[j+1];
 	                    nums[j+1] = temp;
@@ -34,6 +36,7 @@ import java.util.Scanner;
 	    }
 	    
 	}
+	 // 정렬된 결과 출력
 	for(int num : nums){
 	       System.out.println(num);
 	    }
