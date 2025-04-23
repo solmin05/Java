@@ -24,19 +24,23 @@
 -1
 -2
 */
-import java.util.*;
-public class Main{
-	public static void main(String[] args) {
-	    Scanner sc = new Scanner(System.in);
-	    int[] num = new int[5];
-	    for(int i=0;i<5;i++){
-	        num[i] = sc.nextInt();
-	        }
-	        Arrays.sort(num);
-	        System.out.println(num[4]);
-	        System.out.println(num[3]);
-	        sc.close();
-	    }
-		
-	}
+import java.util.*;  // Scanner, Arrays 사용을 위해 import
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);  
+        int[] num = new int[5];               // 정수 5개 저장할 배열
+
+        for(int i = 0; i < 5; i++) {
+            num[i] = sc.nextInt();            
+        }
+
+        Arrays.sort(num);                     // 오름차순 정렬
+
+        System.out.println(num[4]);           // 가장 큰 수 출력
+        System.out.println(num[3]);           // 두 번째로 큰 수 출력
+
+        sc.close();                           
+    }
+}
 
