@@ -34,6 +34,6 @@ public class Main{
             System.out.println(); // 다음 줄로 이동
         }
 
-        scanner.close(); // Scanner 객체 닫기
+        sc.close(); // Scanner 객체 닫기
     }
 }
