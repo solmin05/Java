@@ -25,7 +25,7 @@ public class Main {
                 arr[i][j] = sc.nextInt();
             }
         }
-
+        // 왼쪽 위 → 오른쪽 아래 대각선 합
         for (int i = 0; i < 3; i++) {
             sum += arr[i][i]; 
         }
